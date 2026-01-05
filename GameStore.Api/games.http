@@ -3,17 +3,17 @@
 GET {{domain}}/games
 
 ###
-GET {{domain}}/games/3
+GET {{domain}}/games/2
 
 ###
 POST {{domain}}/games
 Content-Type: application/json
 
 {
-    "name": "GTA V",
-    "genreId": 2,
-    "price": 59.99,
-    "releaseDate": "2013-09-17"
+  "name": "Gran Turismo 7",
+  "genreId": 4,
+  "price": 69.99,
+  "releaseDate": "2022-03-04"
 }
 
 ###
@@ -21,12 +21,15 @@ PUT {{domain}}/games/2
 Content-Type: application/json
 
 {
-    "name": "The Last of Us Part II",
-    "genre": "RPG",
-    "price": 49.99,
-    "releaseDate": "2020-06-19"
+  "name": "God of War Ragnarök",
+  "genreId": 1,
+  "price": 59.99,
+  "releaseDate": "2022-11-09"
 }
 
 ###
-DELETE {{domain}}/games/90
+DELETE {{domain}}/games/2
 Content-Type: application/json
+
+###
+GET {{domain}}/genres

@@ -2,6 +2,7 @@ using GameStore.Api.Data;
 using GameStore.Api.Data.Migrations;
 using GameStore.Api.Dtos;
 using GameStore.Api.endpoints;
+using GameStore.Api.Endpoints;
 using GameStore.Api.Models;
 using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.Extensions.Options;
@@ -15,6 +16,8 @@ builder.AddGameStoreDb();
 var app = builder.Build();
 
 app.MapGameEndpoints();
+
+app.MapGenresEndpoints();
 
 app.MigrateDb();
 
