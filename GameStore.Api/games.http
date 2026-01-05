@@ -10,8 +10,8 @@ POST {{domain}}/games
 Content-Type: application/json
 
 {
-    "name": "",
-    "genre": "RPG",
+    "name": "GTA V",
+    "genreId": 2,
     "price": 59.99,
     "releaseDate": "2013-09-17"
 }
