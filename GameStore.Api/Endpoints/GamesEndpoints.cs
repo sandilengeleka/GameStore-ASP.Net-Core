@@ -31,7 +31,7 @@ public static class GamesEndpoints
             )
     ];
 
-    public static void MapGameEndpoint(this WebApplication app)
+    public static void MapGameEndpoints(this WebApplication app)
     {
 
         var group = app.MapGroup("/games");
