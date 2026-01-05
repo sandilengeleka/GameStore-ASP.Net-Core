@@ -1,0 +1,32 @@
+@domain = http://localhost:5129
+
+GET {{domain}}/games
+
+###
+GET {{domain}}/games/3
+
+###
+POST {{domain}}/games
+Content-Type: application/json
+
+{
+    "name": "",
+    "genre": "RPG",
+    "price": 59.99,
+    "releaseDate": "2013-09-17"
+}
+
+###
+PUT {{domain}}/games/2
+Content-Type: application/json
+
+{
+    "name": "The Last of Us Part II",
+    "genre": "RPG",
+    "price": 49.99,
+    "releaseDate": "2020-06-19"
+}
+
+###
+DELETE {{domain}}/games/90
+Content-Type: application/json
